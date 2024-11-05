@@ -63,24 +63,21 @@ li a:hover::before
 {
   width: 100%;
 }
-.visit-btn
+.visit-btn 
 {
   padding: 0.8rem 1.5rem;
   border-radius: 3rem;
   border:none;
   font-weight: 500;
   font-size: 1rem;
-  color:white;
+  color:black;
   cursor: pointer;
   text-wrap: nowrap;
   transition:0.3 ease-in-out;
   background: linear-gradient(to right,rgb(0,127,255),rgb(255,0,255));
 }
 
-.visit-btn:hover{
 
-  background: linear-gradient(to right,rgb(255,0,255),rgb(0,127,255));
-}
 #menu-icon{
   font-size: 2rem;
   display: none;
@@ -299,13 +296,13 @@ section
   border-radius: 1rem;
 }
 
-.project-card:hover .btn
+.project-card:hover a
 {
   border: 2px solid white;
   color:white;
 }
 
-.project-card:hover .btn:hover
+.project-card:hover a:hover
 {
   border:2px solid white;
   background-color: white;
