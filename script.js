@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           // Sinon, met à jour le contenu textuel
           element.innerHTML=element.getAttribute("data-fr");
+          element.innerHTML=element.getAttribute("data-fr-text");
         }
       } else if (lang === "en") {
         if (element.tagName === "a") {
@@ -21,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           // Sinon, met à jour le contenu textuel         
             element.innerHTML=element.getAttribute("data-en");
+           element.innerHTML=element.getAttribute("data-en-text");
+          
         }
       }
     });
