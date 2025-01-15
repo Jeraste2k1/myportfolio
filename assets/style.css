@@ -13,22 +13,23 @@ body
   background: rgb(238, 231, 231);
 }
 /*=======================================Header==========================*/
-header{
+header {
   position: fixed;
-  top:1rem;
-  left:25%;
-  transform:transition(-50% );
-  display:flex;
-  align-items:center;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  display: flex;
+  align-items: center;
   justify-content: center;
-  gap:5rem;
-  background-color: rgba(0,0,0,0.8);
-  color:white;
+  gap: 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
   backdrop-filter: blur(8px);
-  padding:0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 3rem;
-  z-index:1000;
+  z-index: 1000;
 }
+
 .logo{
   color:white;
   font-size: 1.3rem;
@@ -429,10 +430,11 @@ footer ul li a
 }
 
 @media(max-width:768px){
-header{
-  gap:1rem;
-  padding:1rem 1rem;
-}
+  header {
+    flex-direction: column; /* Aligne les éléments verticalement */
+    gap: 1rem; /* Réduit l'espacement */
+    padding: 1rem;
+  }
 header .logo{
   font-size:1rem;
 }
