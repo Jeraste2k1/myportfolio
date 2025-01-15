@@ -9,18 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
       if (lang === "fr") {
         if (element.tagName === "a") {
           // Pour les liens, met à jour l'attribut href
-          element.setAttribute("href", element.getAttribute("data-fr"));
+          element.innerHTML = ("href", element.getAttribute("data-fr"));
         } else {
           // Sinon, met à jour le contenu textuel
-          element.textContent = element.getAttribute("data-fr");
+          element.innerHTML=element.getAttribute("data-fr");
         }
       } else if (lang === "en") {
         if (element.tagName === "a") {
           // Pour les liens, met à jour l'attribut href
-          element.setAttribute("href", element.getAttribute("data-en"));
+          element.innerHTML = ("href", element.getAttribute("data-en"));
         } else {
-          // Sinon, met à jour le contenu textuel
-          element.textContent = element.getAttribute("data-en");
+          // Sinon, met à jour le contenu textuel         
+            element.innerHTML=element.getAttribute("data-en");
         }
       }
     });
