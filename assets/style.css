@@ -15,7 +15,7 @@ body
 /*=======================================Header==========================*/
 header {
   position: fixed;
-  top: 2%; 
+  top: 5%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   display: flex;
