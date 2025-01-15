@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const frBtn = document.getElementById("fr-btn");
   const enBtn = document.getElementById("en-btn");
 
+  
   // Fonction pour changer la langue
   function switchLanguage(lang) {
     document.querySelectorAll("[data-fr]").forEach((element) => {
