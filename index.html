@@ -7,170 +7,127 @@
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="icon" href="assets/img/portf.png" type="image/png">
-
 </head>
 <body>
   <header class="header">
-    <a href="#" class="logo"><span>Jason Eraste</span></a>
+    <a href="#" class="logo"><span data-fr="Jason Eraste" data-en="Jason Eraste">Jason Eraste</span></a>
     <ul class="nav-links">
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#experience">Experience</a>
-      </li>
-      
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
+      <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+      <li><a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a></li>
+      <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+      <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
     </ul>
     <i class="fa-solid fa-bars" id="menu-icon"></i>
-    <button class="visit-btn"><a href="https://github.com/Jeraste2k1" target="_blank">Visit Github</a></button>
+    <button class="visit-btn">
+      <a href="https://github.com/Jeraste2k1" target="_blank" data-fr="Visiter Github" data-en="Visit Github">Visiter Github</a>
+    </button>
+    <div class="language-switcher">
+      <img src="assets/img/france flag.png" alt="Français" id="fr-btn" class="flag">
+      <img src="assets/img/usa flag.jpeg" alt="English" id="en-btn" class="flag">
+    </div>
   </header>
 
- <section id="about" class="about">
-  <div class="about-container">
-    <img src="assets/img/imagee.jpg" alt="">
-
-    <div class="info-box">
-
-      <div class="text">
-        <h3>Hi, i'm</h3>
-        <h1>Jason Eraste</h1>
-        <span>Web Developer</span>
+  <section id="about" class="about">
+    <div class="about-container">
+      <img src="assets/img/imagee.jpg" alt="">
+      <div class="info-box">
+        <div class="text">
+          <h3 data-fr="Bonjour, je suis" data-en="Hi, I'm">Bonjour, je suis</h3>
+          <h1 data-fr="Jason Eraste" data-en="Jason Eraste">Jason Eraste</h1>
+          <span data-fr="Développeur Web" data-en="Web Developer">Développeur Web</span>
+        </div>
+        <div class="btn-group">
+          <a href="assets/LE CV  DE JASON .pdf" download="LE CV DE JASON.pdf" target="_blank" data-fr="Télécharger le CV" data-en="Download CV">Télécharger le CV</a>
+          <a href="https://wa.me/22959257219?text=Bonjour%20je%20viens%20de%20votre%20portfolio" target="_blank" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Jeraste2k1"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100080045207416"><i class="fa-brands fa-square-facebook"></i></a>
+          <i class="fa-brands fa-linkedin"></i>
+        </div> 
       </div>
-
-      <div class="btn-group">
-          <a href="assets/LE CV  DE JASON .pdf" download="LE CV DE JASON.pdf" target="_blank">
-          Download CV
-      </a>
-          <a href="https://wa.me/22959257219?text=Bonjour%20je%20viens%20de%20votre%20portfolio" target="_blank" class="">
-          Contact
-      </a>
-      </div>
-      
-       <div class="socials">
-       <a href="https://github.com/Jeraste2k1"> <i class="fa-brands fa-github"></i></a>
-       <a href="https://www.facebook.com/profile.php?id=100080045207416"> <i class="fa-brands fa-square-facebook"></i></a>
-       <i class="fa-brands fa-linkedin"></i>
-      </div> 
     </div>
-   
-  </div>
- </section>
+  </section>
 
- <section id="experience" class="experience">
-  <h2 class="section-title"> Experiences </h2>
-  <div class="experience-info">
-    <div class="grid">
+  <section id="experience" class="experience">
+    <h2 class="section-title" data-fr="Expériences" data-en="Experiences">Expériences</h2>
+    <div class="experience-info">
+      <div class="grid">
+        <div class="grid-card">
+          <i class="fa-solid fa-code"></i>
+          <span data-fr="Développement Wordpress" data-en="Wordpress Development">Développement Wordpress</span>
+          <p data-fr="* Rédaction et publication de blogs optimisés SEO. <br>* Création et personnalisation de pages web et fonctionnalités en utilisant des thèmes et extensions adéquats."
+             data-en="* Writing and publishing SEO-optimized blogs. <br>* Creating and customizing web pages and features using suitable themes and plugins.">
+             * Rédaction et publication de blogs optimisés SEO. <br>* Création et personnalisation de pages web et fonctionnalités en utilisant des thèmes et extensions adéquats.
+          </p>
+        </div>
 
-      <div class="grid-card">
-        <i class="fa-solid fa-code"></i>
-        <span>Developpement Wordpress</span>
-        <p>*Rédaction et publication de blog optimisé SEO. <br>
-        *Création et personnalisation de pages web et fonctionnalités en utilisant des thèmes et extension adéquat</p>
+        <div class="grid-card">
+          <i class="fa-solid fa-file-code"></i>
+          <span data-fr="Développement et Gestion Shopify" data-en="Shopify Development and Management">Développement et Gestion Shopify</span>
+          <p data-fr="* Création complète de boutiques Shopify en ligne. <br>* Personnalisation avancée du code Liquid pour ajouter des fonctionnalités. <br>* Gestion et optimisation des boutiques Shopify."
+             data-en="* Complete creation of Shopify online stores. <br>* Advanced Liquid code customization to add features. <br>* Management and optimization of Shopify stores.">
+             * Création complète de boutiques Shopify en ligne. <br>* Personnalisation avancée du code Liquid pour ajouter des fonctionnalités. <br>* Gestion et optimisation des boutiques Shopify.
+          </p>
+        </div>
+
+        <div class="grid-card"> 
+          <i class="fa-solid fa-laptop"></i>
+          <span data-fr="Intégration d'IA" data-en="AI Integration">Intégration d'IA</span>
+          <p data-fr="* Conception d'un moteur de recherche avec un algorithme de correction (Levenshtein) et un modèle prédictif."
+             data-en="* Designing a search engine with a correction algorithm (Levenshtein) and a predictive model.">
+             * Conception d'un moteur de recherche avec un algorithme de correction (Levenshtein) et un modèle prédictif.
+          </p>
+        </div>
+
+        <div class="grid-card">
+          <i class="fa-solid fa-list"></i>
+          <span data-fr="WebDev Challenge Code" data-en="WebDev Challenge Code">WebDev Challenge Code</span>
+          <p data-fr="* Développement et déploiement de logiciels de gestion pour une scolarité et une poissonnerie avec Windev. <br>* Création de sites éducatifs."
+             data-en="* Development and deployment of management software for schools and fisheries using Windev. <br>* Creation of educational websites.">
+             * Développement et déploiement de logiciels de gestion pour une scolarité et une poissonnerie avec Windev. <br>* Création de sites éducatifs.
+          </p>
+        </div>
       </div>
-
-      <div class="grid-card">
-        <i class="fa-solid fa-file-code"></i>
-        <span>Developpement et Gestion shopify</span>
-        <p>*Création en ligne complète de boutiques shopify <br>
-        *personnalisation avancée du code liquid pour l'ajout de fonctionnalités avancées <br>
-      *Gestion et optimisation des boutiques shopify en lignes </p>
-      </div>
-
-      <div class="grid-card"> 
-        <i class="fa-solid fa-laptop"></i>
-        <span>*Intégration d'IA</span>
-        <p>Conception d'un moteur de recherche, incluant un algorithme de correction(Levenshtein) et l'intégration d'un modèle pour prédire les recherches.</p>
-      </div>
-
-      <div class="grid-card">
-        <i class="fa-solid fa-list"></i>
-        <span>WebDev Challenge code </span>
-        <p>*Conception et déploiement de logiciel de gestion pour une scolarité et une poisonnerie en utilisant Windev. <br>
-        *Création de site et plateforme éducatives</p>
-      </div>
-
+      <img src="assets/img/image2.jpeg" alt="">
     </div>
-    <img src="assets/img/image2.jpeg" alt="">
-  </div>
- </section>
+  </section>
 
- <section id="projects" class="projects">
-    <h2 class="section-title">Recent projects</h2>
+  <section id="projects" class="projects">
+    <h2 class="section-title" data-fr="Projets récents" data-en="Recent Projects">Projets récents</h2>
     <div class="projects-grid">
-
       <div class="project-card">
         <img src="assets/img/signup react.png" alt="">
-        <h3>React Registration</h3>
-        <p> C'est un formulaire d'inscription interactif, conçu en react avec plusieurs fonctionnalités comme la validation, la gestion dynamique des champs et la navigation après soumission</p>
-        <div class="btn-group"><a href="https://jasonreactregistration.netlify.app/" target="_blank">view website</a>
-        </div>
+        <h3 data-fr="Inscription React" data-en="React Registration">Inscription React</h3>
+        <p data-fr="Formulaire d'inscription interactif avec validation et navigation dynamique." 
+           data-en="Interactive registration form with validation and dynamic navigation.">
+           Formulaire d'inscription interactif avec validation et navigation dynamique.
+        </p>
+        <div class="btn-group"><a href="https://jasonreactregistration.netlify.app/" target="_blank" data-fr="Voir le site" data-en="View Website">Voir le site</a></div>
       </div>
-      
-      <div class="project-card">
-        <img src="assets/img/swhome.png" alt="">
-        <h3>Home Smart</h3>
-        <p>Home Smart est un site conçu avec tailwindcss et vue pour une solution web, pour présenter une maison intelligente et connectée. </p>
-        <div class="btn-group"><a href="https://swhome.netlify.app" target="_blank">view website</a>
-        </div>
-      </div>
-
-<!-- <div class="project-card">
-      <img src="assets/img/kingfood.png" alt="">
-      <h3>King Food</h3>
-      <p>King Food est un site web dynamique avec du bootstrap pour un restaurant, présentant un menu varié et un service d'accueil exceptionnel </p>
-      <div class="btn-group">
-       <a href="https://kingfooood.netlify.app" target="_blank">view website</a>
-      </div>
-    </div> -->
-    <div class="project-card">
-      <img src="assets/img/challengecode.png" alt="">
-      <h3> Challenge Code Academy</h3>
-      <p> C C A est une  Plateforme d'apprentissage de la programmation , offrant des ressources et exercices pratiques pour les passionnés de code </p>
-      <div class="btn-group">
-       <a href="https://challenge-code.com" target="_blank"> view website</a>
-      </div>
+      <!-- Ajoute d'autres projets avec les attributs similaires -->
     </div>
-  </div>
- </section>
+  </section>
 
- <section id="contact" class="contact">
-  <div class="input-box">
-    <h2 class="section-title">Contact Me</h2>
+  <section id="contact" class="contact">
+    <h2 class="section-title" data-fr="Contactez-moi" data-en="Contact Me">Contactez-moi</h2>
     <div class="btn-group">
-          <a href="https://wa.me/22959257219?text=Bonjour%20je%20viens%20de%20votre%20portfolio" target="_blank" class="">
-          Contact
-      </a>
-      </div>
-  </div>
- </section>
+      <a href="https://wa.me/22959257219?text=Bonjour%20je%20viens%20de%20votre%20portfolio" target="_blank" data-fr="Contact" data-en="Contact">Contact</a>
+    </div>
+  </section>
+
   <footer>
     <ul>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="#experience">Experience</a>
-      </li>
-      
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
+      <li><a href="#about" data-fr="À propos" data-en="About">À propos</a></li>
+      <li><a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a></li>
+      <li><a href="#projects" data-fr="Projets" data-en="Projects">Projets</a></li>
+      <li><a href="#contact" data-fr="Contact" data-en="Contact">Contact</a></li>
     </ul>
-    <p class="copyright">All Rights Reserved |Jason Eraste</p>
+    <p class="copyright" data-fr="Tous droits réservés | Jason Eraste" data-en="All Rights Reserved | Jason Eraste">
+      Tous droits réservés | Jason Eraste
+    </p>
   </footer>
 
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
