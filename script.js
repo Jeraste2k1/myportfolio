@@ -14,9 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
   function switchLanguage(lang) {
     document.querySelectorAll("[data-fr]").forEach((element) => {
       if (lang === "fr") {
-        element.textContent = element.getAttribute("data-fr");
+        if (element.tagName === "A") {
+          element.setAttribute("href", element.getAttribute("data-fr"));
+        } else {
+          element.textContent = element.getAttribute("data-fr");
+        }
       } else if (lang === "en") {
-        element.textContent = element.getAttribute("data-en");
+        if (element.tagName === "A") {
+          element.setAttribute("href", element.getAttribute("data-en"));
+        } else {
+          element.textContent = element.getAttribute("data-en");
+        }
       }
     });
   }
@@ -24,5 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Écouteurs pour les boutons
   frBtn.addEventListener("click", () => switchLanguage("fr"));
   enBtn.addEventListener("click", () => switchLanguage("en"));
+});
+
+  contactLink.href = contactLink.dataset[lang];
 });
 
