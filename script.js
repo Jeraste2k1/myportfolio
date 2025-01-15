@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function switchLanguage(lang) {
     document.querySelectorAll("[data-fr]").forEach((element) => {
       if (lang === "fr") {
-        if (element.tagName === "A") {
+        if (element.tagName === "a") {
           // Pour les liens, met à jour l'attribut href
           element.setAttribute("href", element.getAttribute("data-fr"));
         } else {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
           element.textContent = element.getAttribute("data-fr");
         }
       } else if (lang === "en") {
-        if (element.tagName === "A") {
+        if (element.tagName === "a") {
           // Pour les liens, met à jour l'attribut href
           element.setAttribute("href", element.getAttribute("data-en"));
         } else {
