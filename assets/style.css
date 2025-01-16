@@ -14,13 +14,7 @@ body
 }
 /*=======================================Header==========================*/
 header {
-header {
   position: fixed;
-  top: 8%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  display: flex;
-  align-items: center;
   top: 8%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
@@ -30,17 +24,11 @@ header {
   gap: 5rem;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  gap: 5rem;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
   backdrop-filter: blur(8px);
-  padding: 0.5rem 1.5rem;
   padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   z-index: 1000;
-  z-index: 1000;
 }
-
 
 .logo{
   color:white;
@@ -95,27 +83,6 @@ li a:hover::before
   font-size: 2rem;
   display: none;
 }
-
-/*=====================================languages==========================*/
-.language-switcher {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-left: 20px;
-}
-
-.flag {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-}
-
-.flag:hover {
-  opacity: 0.8;
-}
-
 
 /*=====================================languages==========================*/
 .language-switcher {
@@ -503,15 +470,11 @@ header .visit-btn{
   grid-template-columns: repeat(1,1fr);
 }
 .experience-info img {
-  width:<<<<<<< HEAD
-    top:11.5%;
-=======
->>>>>> 8a59b3d5fb18fee147f8a382<<<<<<< HEAD
-    top:11.5%;
-=======
->>>>>>> 8a59b3d5fb18fee147f8a382117c7726ff11f646
+  width:70vw;
+};
+}
 
-ia(max-width:600px){
+@media(max-width:600px){
  
   
   header #menu-icon{
@@ -580,4 +543,3 @@ ia(max-width:600px){
     gap:0.6rem;
   }
 }
-
